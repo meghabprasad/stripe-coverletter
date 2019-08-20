@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Megha's Story - Stripe</title>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="logo-div">
+                <img id="logo"src="./stripe-official-logo.png" />
+                <br>
+                <p id="slogan">The new standard in online payments</p>
+            </div>
+                <div id="buttons">
+                    <button type="button" class=" btn " id="my-story">My story</button>
+                    <button type="button" class=" btn " id="unique">What makes me unique</button>
+                    <button type="button" class=" btn " id="why">Why I want to work at Stripe</button>
+                </div>
+                <div class="response">
+                    <p id="response-content"></p>
+                </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $("#my-story").click(function(){
+            $("#my-story").attr("style", "color: black");
+            $("#why").attr("style", "color: white");
+            $("#unique").attr("style", "color: white");
+            $("#response-content").html("<p>Before I enrolled in a Coding Bootcamp, I was a pre-med student working at Stanford University. Being exposed to both engineering and medicine allowed me see the impact that technology can make on individual lives, which bolstered my passion to enter the engineering field.</p><p>Prior to starting my training, I did a great deal of self-reflection trying to decide which career path to choose and what I wanted to make of myself. Having spent several years preparing to become a doctor, deciding to pivot to an entirely different career field was not easy for me. However, I told myself that the best case scenario of completing the boot camp is that I will find a career that is both exciting and challenging for me and the worst case scenario is that I learn a new skill.</p><p>As a recent graduate of the program, I can confidently say that this is the career I want to pursue and I know I can make an impact in!</p>")
+        })
+
+        $("#unique").click(function(){
+            $("#unique").attr("style", "color: black");
+            $("#response-content").html("<h5>My cultural background</h5><p>As a first generation South-Asian-American woman, I was never encouraged to explore past my comfort zone, in terms of career, education, and lifestyle. However, I took it upon myself to find exactly what makes me happy and go after it. As a woman who worked in healthcare and now trying to enter the tech industry, working in a highly diverse and inclusive work culture is my top priority. I am truly excited to hear that Stripe also ensures that inclusivity is a priority.<p><h5>My educational background</h5><p>Having a background in human research and human behavior, I will bring a novel approach to building products at Stripe, a platform geared toward bringing highly engaging payment solutions to people. I have taken numerous courses on psychology and neurobiology of how human brain functions in response to technology. I am more eager than ever to leverage my background in Neurobiology to build products centered around human interaction!</p>")
+            $("#my-story").attr("style", "color: white");
+            $("#why").attr("style", "color: white");
+        })
+
+        $("#why").click(function(){
+            $("#why").attr("style", "color: black");
+            $("#unique").attr("style", "color: white");
+            $("#my-story").attr("style", "color: white");
+            $("#response-content").html("<h4>I resonate with Stripe’s mission:</h4><p>In our day to day lives, we are constantly engaging with money - buying, selling, saving, trading, etc. People who have to integrate money into their business or project are looking for the most secure and reliable platform, which Stripe provides. Stripe allows anyone from an experienced financial adviser to a novice developer to integrate a highly secure and consistent payment platform into their product. This is awesome!</p><h4>My experience with Stripe: </h4><p>For my current team project, we have been looking at integrating Stripe into our Vitual Fridge App to deliver ingredients to customers through Postmates. So far, the UI experience and the documentation has been so smooth and efficient. I would love to join the team and make Stripe an even better platform for everyone!</p>")
+        })
+
+    </script>
+</body>
+</html>
